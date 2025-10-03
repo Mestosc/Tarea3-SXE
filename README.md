@@ -53,13 +53,33 @@ Luego usamos, la i es de interactivo y la t de un pseudo teletipo(pseudo TTY en 
 ```sh
 docker exec -it dam_alp1 sh
 ```
-<img width="1120" height="96" alt="imagen" src="https://github.com/user-attachments/assets/3e4575c1-91a2-4d35-bffc-6e6223b99d1e" />
+<img width="1120" height="96" alt="imagen" src="https://github.com/user-attachments/assets/3e4575c1-91a2-4d35-bffc-6e6223b9o9d1e" />
 Como podemos ver abajo aparece una terminal con esto ya estamos oficialmente en dam_alp1
 
 Para dam_alp2 el proceso es lo mismo solo que cambiando el nombre por lo que realmente no merece la pena ponerlo aqui
 
+## Entrando a los contenedores 
+Una vez ya en ``dam_alp1``, podemos ver la direccion ip con ``ip a``
 
+<img width="2846" height="778" alt="imagen" src="https://github.com/user-attachments/assets/b4c90686-23c0-451c-96f5-5c24a30a1ec2" />
 
+vemos que la ip comienza con 172 esto es parte de las interfaz de red de docker, como docker usar por defecto direcciones Ip que empiezan por 172
+
+En ``dam_alp2`` se puede hacer lo mismo para ver la ip de la misma forma
+
+<img width="2860" height="644" alt="imagen" src="https://github.com/user-attachments/assets/fa8eeb03-7d78-45e5-a1a1-1d29ae1331f8" />
+
+Si se ve un icono como de Youtube es porque lo hice en casa y tenia eso en el navegador ya que estaba escuchando musica.
+
+Pero bueno ahora he probado a hacer ping desde dam_alp1 hacia dam_alp2
+
+<img width="2856" height="530" alt="imagen" src="https://github.com/user-attachments/assets/440901d4-1fe7-4055-98e3-b0583d9676ec" />
+
+Y ahora voy a probar a hacerlo desde dam_alp2 hacia dam_alp1
+
+<img width="1200" height="284" alt="imagen" src="https://github.com/user-attachments/assets/6026e5bc-66e8-4c3b-b41a-8af92170900f" />
+
+Al salir de dam_alp1 como el proceso que inicio originalmente el contenedor sigue activo pues el contenedor se ha quedado en segundo plano
 
 
 
