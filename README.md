@@ -30,3 +30,5 @@ para eso usaremos el comando `docker ps -a` que nos mostrara lo siguiente
 <img width="1818" height="184" alt="imagen" src="https://github.com/user-attachments/assets/d9f5cbb9-fc08-4920-b723-56e58bd2d3cf" />
 
 Podemos ver que el contenedor existe y su nombre es priceless_swanson
+
+Para arrancarlo podemos usar el comando `docker start -a priceless_swanson` el -a es una abreviatura que la utilidd de linea de comandos de docker permite
