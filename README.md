@@ -56,7 +56,7 @@ docker exec -it dam_alp1 sh
 <img width="1120" height="96" alt="imagen" src="https://github.com/user-attachments/assets/3e4575c1-91a2-4d35-bffc-6e6223b99d1e" />
 Como podemos ver abajo aparece una terminal con esto ya estamos oficialmente en dam_alp1
 
-
+Para dam_alp2 el proceso es lo mismo solo que cambiando el nombre por lo que realmente no merece la pena ponerlo aqui
 
 
 
