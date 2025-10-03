@@ -51,7 +51,7 @@ Uso `docker start -a dam_alp1` para arrancar el contenedor para acceder a el med
 
 Luego usamos, la i es de interactivo y la t de un pseudo teletipo(pseudo TTY en ingles) para poder tener una terminal en la que hacer algo
 ```sh
-docker exec -it dam_alp1 bash
+docker exec -it dam_alp1 sh
 ```
 
 
