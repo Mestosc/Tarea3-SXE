@@ -39,7 +39,7 @@ Ahora vamos a crear un contenedor de nombre `dam_alp1` con el siguiente comando
 docker create -q --name dam_alp1 alpine tail -f /dev/null
 ```
 Advertencia si el contenedor no encuentra un proceso activo, sale inmediatamente por eso le pongo eso para que el contenedor siga ejecutando
-El comando nos genera el siguiente output
+El comando nos genera el siguiente output, el output es más o menos igual con el comando que aparece en esa captura y lo que yo he puesto, a lo mejor no sacaria la salida pero no es muy diferente
 
 <img width="1330" height="118" alt="imagen" src="https://github.com/user-attachments/assets/55a1c4dc-51c0-4b30-b311-6cb13f499d4e" />
 
@@ -53,6 +53,8 @@ Luego usamos, la i es de interactivo y la t de un pseudo teletipo(pseudo TTY en 
 ```sh
 docker exec -it dam_alp1 sh
 ```
+<img width="1120" height="96" alt="imagen" src="https://github.com/user-attachments/assets/3e4575c1-91a2-4d35-bffc-6e6223b99d1e" />
+Como podemos ver abajo aparece una terminal con esto ya estamos oficialmente en `dam_alp1`
 
 
 
