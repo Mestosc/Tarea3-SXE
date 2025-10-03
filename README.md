@@ -36,9 +36,9 @@ Para arrancarlo podemos usar el comando `docker start -a priceless_swanson` el -
 Ahora vamos a crear un contenedor de nombre `dam_alp1` con el siguiente comando
 
 ```sh
-docker create --name dam_alp1 alpine
+docker create -q --name dam_alp1 alpine tail -f /dev/null
 ```
-
+Advertencia si el contenedor no encuentra un proceso activo, sale inmediatamente por eso le pongo eso para que el contenedor siga ejecutando
 El comando nos genera el siguiente output
 
 <img width="1330" height="118" alt="imagen" src="https://github.com/user-attachments/assets/55a1c4dc-51c0-4b30-b311-6cb13f499d4e" />
@@ -47,7 +47,13 @@ Esto crea un contenedor con el nombre `dam_alp1`
 
 <img width="2272" height="160" alt="imagen" src="https://github.com/user-attachments/assets/d16bfa14-21a2-4251-828f-9aa36d28bf25" />
 
-Uso `docker start dam_alp1` para arrancar el contenedor para acceder a el mediante una linea de comandos
+Uso `docker start -a dam_alp1` para arrancar el contenedor para acceder a el mediante una linea de comandos
+
+Luego usamos, la i es de interactivo y la t de un pseudo teletipo(pseudo TTY en ingles) para poder tener una terminal en la que hacer algo
+```sh
+docker exec -it dam_alp1 bash
+```
+
 
 
 
