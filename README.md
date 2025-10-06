@@ -53,7 +53,7 @@ Luego usamos, la i es de interactivo y la t de un pseudo teletipo(pseudo TTY en 
 ```sh
 docker exec -it dam_alp1 sh
 ```
-<img width="1120" height="96" alt="imagen" src="https://github.com/user-attachments/assets/3e4575c1-91a2-4d35-bffc-6e6223b9o9d1e" />
+
 Como podemos ver abajo aparece una terminal con esto ya estamos oficialmente en dam_alp1
 
 Para dam_alp2 el proceso es lo mismo solo que cambiando el nombre por lo que realmente no merece la pena ponerlo aqui
@@ -80,6 +80,15 @@ Y ahora voy a probar a hacerlo desde dam_alp2 hacia dam_alp1
 <img width="1200" height="284" alt="imagen" src="https://github.com/user-attachments/assets/6026e5bc-66e8-4c3b-b41a-8af92170900f" />
 
 Al salir de dam_alp1 como el proceso que inicio originalmente el contenedor sigue activo pues el contenedor se ha quedado en segundo plano
+
+Para ver la memoria en el disco uso ``docker system df`` para ver cuanto los contenedores o las imagenes, aunque lo que nos interesa sean los contenedores
+
+<img width="2746" height="512" alt="imagen" src="https://github.com/user-attachments/assets/abbb9250-65b2-46d7-b1b1-cf0ebfa0779f" />
+
+Para ver cuanta ram, cpu y demás ocupan los contenedores docker que estamos ejecutando usamos el comando ``docker stats`` de la ssiguiente manera
+
+<img width="2842" height="372" alt="imagen" src="https://github.com/user-attachments/assets/eaeedc49-723e-48da-941c-044d0b1721f4" />
+
 
 
 
